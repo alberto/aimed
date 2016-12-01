@@ -1,0 +1,24 @@
+{
+  "name": "aimed",
+  "version": "1.0.0",
+  "description": "A light AMD implemetation",
+  "main": "aimed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alberto <alberto.rdrz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.11.1"
+  },
+  "files": [
+    "aimed.js",
+    "README.md"
+  ],
+  "keywords": [
+    "amd",
+    "requirejs",
+    "require",
+    "define"
+  ]
+}
