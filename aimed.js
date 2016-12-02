@@ -10,12 +10,6 @@
   var modules = {
     "require": {
       factory: function() { return require; }
-    },
-    "module": {
-      factory: function() { return {}; }
-    },
-    "exports": {
-      factory: function() { return {} }
     }
   };
 
@@ -61,6 +55,9 @@
         module.loading = true;
         return requireAll(module.deps, cb);
       }
+      return cb();
+    }
+    if(dep === "exports" || dep === "module") {
       return cb();
     }
 
